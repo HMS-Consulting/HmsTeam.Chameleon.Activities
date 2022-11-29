@@ -3,16 +3,14 @@
   "description": "Chameleon app activities\r\n",
   "main": "NewActivity.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "2.12.3",
-    "UiPath.Mail.Activities": "1.15.2",
-    "UiPath.System.Activities": "21.10.5",
+    "UiPath.System.Activities": "22.10.3",
     "UiPath.UIAutomation.Activities": "22.10.3"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.6.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -34,7 +32,9 @@
     "outputType": "Library",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": []
+      "privateWorkflows": [
+        "Tester.xaml"
+      ]
     },
     "processOptions": {
       "ignoredFiles": []
