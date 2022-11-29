@@ -1,14 +1,15 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_dbl_timeoutInSec="3" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_str_chameleon_url" Type="InArgument(x:String)" />
     <x:Property Name="in_secure_password" Type="InArgument(ss:SecureString)" />
     <x:Property Name="in_str_username" Type="InArgument(x:String)" />
     <x:Property Name="in_str_field" Type="InArgument(x:String)" />
+    <x:Property Name="in_dbl_timeoutInSec" Type="InArgument(x:Double)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>914,2819</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>788,2334</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -85,26 +86,26 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="924,2754" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="798,2269" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="882,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="882,2531" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2046" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="848,2315" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,1830" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="806,1436" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
+            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="680,1436" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
                   <sap:WorkflowViewStateService.ViewState>
@@ -179,43 +180,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NCheckState DisplayName="Check App State 'Close'" sap:VirtualizedContainerService.HintSize="806,597" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="3" Version="V1">
-              <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,381" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;closing note pop up&quot;]" />
-                  <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="999, 1, 34, 30" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="82375441-55c3-4737-b74d-5c8829918a6b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVFhH7dU9CsJAEIbhaUTxDB7BA+QEOYC2Ipba7SG8SDoPs2DvKayExWLkCwYE15hZJzDCvDBFfiAPuyGhZb3jbxNCyJ4fY6rjuR1iQ5mFYWf2zcUebL098PV2t7mVCKtmDoYVc9jQHCYNMJXvGBFxjPF59B6u4Z6hqcHw4Ml0lsX1XfuUGgzlACUopApDr5BSFFKHoQ5UikJmYfiJd5naykW14vnm1I6pl19txfoAJTg1mPYHVv0d08ph0hwmzWHSHCbNYdJGgaWUfp4/gDE/AN8fhm/I5S3lAAAAAElFTkSuQmCC" InformativeScreenshot="5f3b85a15dfa72bdbabbfa3b3f1f26dc.png" ScopeSelectorArgument="&lt;wnd app='iexplore.exe' cls='Internet Explorer_TridentDlgFrame' title='ריכוז הודעות -- Webpage Dialog' /&gt;" SearchSteps="Selector, FuzzySelector" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                </Sequence>
-              </uix:NCheckState.IfExists>
-              <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;pop up not appear&quot;]" />
-                </Sequence>
-              </uix:NCheckState.IfNotExists>
-              <uix:NCheckState.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="999, 1, 34, 30" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="3c42d0ae-950e-4ab3-bc2e-2418a329d425" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVFhH7dU9CsJAEIbhaUTxDB7BA+QEOYC2Ipba7SG8SDoPs2DvKayExWLkCwYE15hZJzDCvDBFfiAPuyGhZb3jbxNCyJ4fY6rjuR1iQ5mFYWf2zcUebL098PV2t7mVCKtmDoYVc9jQHCYNMJXvGBFxjPF59B6u4Z6hqcHw4Ml0lsX1XfuUGgzlACUopApDr5BSFFKHoQ5UikJmYfiJd5naykW14vnm1I6pl19txfoAJTg1mPYHVv0d08ph0hwmzWHSHCbNYdJGgaWUfp4/gDE/AN8fhm/I5S3lAAAAAElFTkSuQmCC" InformativeScreenshot="4881ebe454327fc72f26a6ea2d596cc3.png" ScopeSelectorArgument="&lt;wnd app='iexplore.exe' cls='Internet Explorer_TridentDlgFrame' title='ריכוז הודעות -- Webpage Dialog' /&gt;" SearchSteps="Selector, FuzzySelector" />
-              </uix:NCheckState.Target>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </uix:NCheckState>
-            <ui:CommentOut sap2010:Annotation.AnnotationText="Lior - I disabled this for now. the login will be completed before." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="806,108" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ClosePopUps.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="680,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CloseLoginPopUp.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:Double" x:Key="in_dbl_timeoutInSec">
+                  <mva:VisualBasicValue x:TypeArguments="x:Double" ExpressionText="in_dbl_timeoutInSec" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:CommentOut sap2010:Annotation.AnnotationText="Lior - I disabled this for now. the login will be completed before." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,108" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
