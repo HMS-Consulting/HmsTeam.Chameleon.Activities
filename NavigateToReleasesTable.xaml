@@ -1,7 +1,11 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="NavigateToReleasesTable" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="in_datetime_MaxDate" Type="InArgument(s:DateTime)" />
     <x:Property Name="in_datetime_MinDate" Type="InArgument(s:DateTime)" />
   </x:Members>
+  <this:NavigateToReleasesTable.in_datetime_MaxDate>
+    <InArgument x:TypeArguments="s:DateTime" />
+  </this:NavigateToReleasesTable.in_datetime_MaxDate>
   <this:NavigateToReleasesTable.in_datetime_MinDate>
     <InArgument x:TypeArguments="s:DateTime" />
   </this:NavigateToReleasesTable.in_datetime_MinDate>
@@ -170,7 +174,7 @@
                 </ui:Target>
               </ui:SetValue.Target>
             </ui:SetValue>
-            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT '" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[Now.AddDays(-1).ToString(&quot;dd/MM/yyyy&quot;)]">
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT '" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[in_datetime_MaxDate.ToString(&quot;dd/MM/yyyy&quot;)]">
               <ui:SetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ca895caa-bd5d-42ef-b885-b7dfd6e1656b" InformativeScreenshot="fd279e492c41ec00b16dcf1d2c4d9f5d" Selector="&lt;webctrl id='ctl00_myContentPlaceHolder_PatientsSupervision_cReleaseEndDate_t*' tableCol='2' tableRow='1' tag='INPUT' type='text' /&gt;">
                   <ui:Target.TimeoutMS>
