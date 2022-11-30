@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>788,2374</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>788,2852</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -86,26 +86,27 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="798,2309" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="798,2787" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2086" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2564" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,1870" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,2348" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="680,1476" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
+            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="680,1436" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
                   <sap:WorkflowViewStateService.ViewState>
@@ -180,11 +181,58 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ClosePopUps.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="680,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CloseLoginPopUp.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:Double" x:Key="in_dbl_timeoutInSec">[in_dbl_timeoutInSec]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: ריכוז הודעות -- Webpage Dialog" sap:VirtualizedContainerService.HintSize="680,539" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,250" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="999, 1, 34, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="93b9de94-3e8c-4ea1-9e4d-255916740297" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACaSURBVFhH7dJbCoAgFITh8xK1hPbb9nxvLT4ZQwVBJY0docv8IBWKfpDWD2N60jCzeaQHJRibYGyCsQnG5gbDBiGE5Wsf5rDmam4wHNy03SEuN3eW6688ApSgkPsd20JKUajK5V9BpSj0H9iKwnP7zvb9y58DlODcYNggdzDmsOZqVS6/R4KxCcYmGJtgbIKxVYHFGG+PF8AsTcrDB0mbtkH5AAAAAElFTkSuQmCC" InformativeScreenshot="fd888cd4806696c4d0ad4b399283f09e.png" ScopeSelectorArgument="&lt;wnd app='iexplore.exe' cls='Internet Explorer_TridentDlgFrame' title='ריכוז הודעות -- Webpage Dialog' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="448, 136, 1040, 807" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJKSURBVDhPlZBdSFNhGMcPSF1IdNEHXRVFriZ1GV10EUVEYRHdddlNCAkFhZBFnYlCEumaaSjMDANDKHVjF4Yiq03IttpHrtXZKF37MjZNO+1s55zt/Dvvu7OPQsge+HEO53l//+c5L1NdLMty68FgMNzUlD+LNPGPMpvNES3ksqZVymBgxwAFiiJB4dtRiB+BFNwO4e02CMErKBTysFqtSRKkhVzUVIYBpje0mEecE57biIX34FeoFm7HBThDUVWUkR7bSQMcDke6tAWhJNc0jjgtwU+H8TOyGd9ce9FqG8fxQS/0Ri+67REsTTQgn5chqyTicSzMz9MtaEDj8Ovrz13XoMQZLLoakOIXkfjBo9cRRX23H7ouL9xzPuRlCbJG6Tfo6qbpR1E5VoOUc1cBWFUniXQSOdhhj0LfG0DTCw6SJKmIlEqA3L9jZWGLsuzdimbbKxx86EPdfQ9FZ/RRub4viGN9fk3OQRJzVQHJ2g4hvBE9k8M40f9GPP/0M849+Vjm1EAA+k4PboxzEFWxSLYSUPjKcO6po8tnnvlx8q4lRBpkEj2oTitJuVwWogp5EsoB0geGb3o8dImsvt/kg3k2gdgSj/RKBhZfAodMXuxum8XouygVs1lBpSogM8NwvJ3ZVNc6c0vf9R77HhRvnaLega7Tizu2MHKqVJRVhEwlYHWSafs+xKTiPUx46t6BRLP1C04PzOHsYABXRzm8DCRVQYCQzWjP4ns5oLra2RYjaZAp5CARimQg/MWaAeQD7ayz1gz4P1juN4tuz6fpJw8hAAAAAElFTkSuQmCC" InformativeScreenshot="4c7db26dd7ad9f6ef6552c82b81a477f.png" Selector="&lt;wnd app='iexplore.exe' cls='Internet Explorer_TridentDlgFrame' title='ריכוז הודעות -- Webpage Dialog' /&gt;" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ClosePopUps.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CloseLoginPopUp.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:Double" x:Key="in_dbl_timeoutInSec">[in_dbl_timeoutInSec]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
             <ui:CommentOut sap2010:Annotation.AnnotationText="Lior - I disabled this for now. the login will be completed before." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,108" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,174" sap2010:WorkflowViewState.IdRef="Sequence_11">
