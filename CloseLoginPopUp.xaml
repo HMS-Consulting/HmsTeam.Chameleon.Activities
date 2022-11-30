@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_dbl_timeoutInSec" Type="InArgument(x:Double)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>896,878</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1125,918</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -75,21 +75,21 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <uix:NCheckState DisplayName="Check App State 'Close'" sap:VirtualizedContainerService.HintSize="906,813" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="[in_dbl_timeoutInSec]" Version="V1">
+  <uix:NCheckState DisplayName="Check App State 'Close'" sap:VirtualizedContainerService.HintSize="906,853" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="[in_dbl_timeoutInSec]" Version="V1">
     <uix:NCheckState.IfExists>
-      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="476,597" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="476,637" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: ריכוז הודעות" sap:VirtualizedContainerService.HintSize="434,372" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="1361628b-0cf0-444d-b6ef-fc8e7eb0ffb2" Timeout="1" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: ריכוז הודעות" sap:VirtualizedContainerService.HintSize="434,412" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="1361628b-0cf0-444d-b6ef-fc8e7eb0ffb2" Timeout="1" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1361628b-0cf0-444d-b6ef-fc8e7eb0ffb2" Timeout="5" Version="V1">
+              <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1361628b-0cf0-444d-b6ef-fc8e7eb0ffb2" Timeout="5" Version="V1">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="999, 1, 34, 30" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="82375441-55c3-4737-b74d-5c8829918a6b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAhCAYAAAC1ONkWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVFhH7dU9CsJAEIbhaUTxDB7BA+QEOYC2Ipba7SG8SDoPs2DvKayExWLkCwYE15hZJzDCvDBFfiAPuyGhZb3jbxNCyJ4fY6rjuR1iQ5mFYWf2zcUebL098PV2t7mVCKtmDoYVc9jQHCYNMJXvGBFxjPF59B6u4Z6hqcHw4Ml0lsX1XfuUGgzlACUopApDr5BSFFKHoQ5UikJmYfiJd5naykW14vnm1I6pl19txfoAJTg1mPYHVv0d08ph0hwmzWHSHCbNYdJGgaWUfp4/gDE/AN8fhm/I5S3lAAAAAElFTkSuQmCC" InformativeScreenshot="5f3b85a15dfa72bdbabbfa3b3f1f26dc.png" ScopeSelectorArgument="&lt;wnd app='iexplore.exe' cls='Internet Explorer_TridentDlgFrame' title='ריכוז הודעות -- Webpage Dialog' /&gt;" SearchSteps="Selector, FuzzySelector" />
                 </uix:NClick.Target>
