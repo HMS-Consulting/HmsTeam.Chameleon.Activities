@@ -93,7 +93,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
-    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2564" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2564" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -181,7 +181,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: ריכוז הודעות -- Webpage Dialog" sap:VirtualizedContainerService.HintSize="680,539" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: ריכוז הודעות -- Webpage Dialog" sap:VirtualizedContainerService.HintSize="680,539" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
