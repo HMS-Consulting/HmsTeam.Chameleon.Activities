@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>788,2892</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>890,2827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -86,36 +86,36 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="798,2787" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="900,2722" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="756,2564" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="858,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;open url: &quot; + in_str_chameleon_url]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser IE: Chameleon" sap:VirtualizedContainerService.HintSize="858,2499" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="722,2348" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="824,2283" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="680,1436" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
+            <uix:NCheckState DisplayName="Check App State Login page" sap:VirtualizedContainerService.HintSize="782,1859" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="5" Version="V1">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="376,1220" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="478,1643" sap2010:WorkflowViewState.IdRef="Sequence_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Page .. &quot;]" />
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'שם משתמש'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Text="[in_str_username]" Version="V1">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Login Page .. &quot;]" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'שם משתמש'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Text="[in_str_username]" Version="V1">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="http://wolfbrw/Chameleon/Account/LogOn" DesignTimeRectangle="899, 460, 150, 21" ElementType="InputBox" FriendlyName="'INPUT UserName'" FullSelectorArgument="&lt;webctrl tableCol='3' tableRow='3' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' aaname='' tag='INPUT' /&gt;" Guid="1d25f6b7-53cf-4289-838e-b617db8a2b2e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAZCAYAAADJ2zdhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVGhD7ZvRSsNAEEX95H6XNtKqlCoKfoDUGquISL9Das24dzYTNmtsDY2DD/fCIcludo30GOnDPbp5q6SL69c2VwMwf6lkFkivdey5ksuE6xdpXefMn3bP7+PQ9WC2qo+Bi/JTpuVWx86fRabhiOuzMt6XMn+UFukc9sGayXIrk3LTC/w8gD0MnXvYyOnyXdHz+n4cUzDXAmP1XFG+S7HcyEn5IePwfMpiqxR3VSfjRcSuXUWDZF2ipR/gPsnAvxNtFQXBOX4/lc1ZtFSwRrIABCsWERUuGbfrXDSM4/mbPQJFuAaHibYWGY1GhAxOW7QABhlmyFA0xiUUjXEJRWNcQtEYl7RFC9847VsnwwwZisa4pC0a/3UyfxSKxriEojEuoWiMSyga4xKKxriEojEuoWiMSyga45KWaLfrSgBFY4YO32iMS/hGY1zy4xuNkKH59kYz4YZsPRmzlLoJlbeKABpRtqZr/lDQfjK65vugjadVpdU6NJcAzq1ul7abfoOuL2NlLm0g/Za8BTW9/4itJjSqMrC/tZ+0AZWBMX2OVbwX7SdU7SKfchz22NeCymneaCbb0KI1ctXnNp5+aGnFrquC1wcVIBszUtFyuu7fhYnWSFKfQzQb78Ohotk6lQzrgwz2BwAmy4jdZ/W5rr2A7lEfc9FAP9Eq+QIn9XYSyMke+AAAAABJRU5ErkJggg==" InformativeScreenshot="77e6edb2caae3e49fe3db56d9ae46e70.png" ScopeSelectorArgument="&lt;html htmlwindowname='Chameleon' title='Chameleon' /&gt;" SearchSteps="FuzzySelector">
                         <uix:TargetAnchorable.Anchors>
@@ -126,7 +126,7 @@
                       </uix:TargetAnchorable>
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NSelectItem DisplayName="Select Item 'תחום'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[in_str_field]" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Version="V1">
+                  <uix:NSelectItem DisplayName="Select Item 'תחום'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[in_str_field]" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Version="V1">
                     <uix:NSelectItem.Items>
                       <scg:List x:TypeArguments="x:String" Capacity="2">
                         <x:String>DOMAIN_LIB</x:String>
@@ -143,7 +143,7 @@
                       </uix:TargetAnchorable>
                     </uix:NSelectItem.Target>
                   </uix:NSelectItem>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'סיסמה'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" SecureText="[in_secure_password]" Version="V1">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'סיסמה'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" SecureText="[in_secure_password]" Version="V1">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="http://wolfbrw/Chameleon/Account/LogOn" DesignTimeRectangle="899, 487, 150, 22" ElementType="InputBoxPassword" FriendlyName="'INPUT Password'" FullSelectorArgument="&lt;webctrl tableCol='3' tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='password' aaname='' tag='INPUT' /&gt;" Guid="f32aacd0-6045-49dc-89fa-7639ff27888a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAaCAYAAABPT0XPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIfSURBVGhD7ZvbSsNAFEX9Gr/bd5tSb6WKgh9QYwxaiojfUbTtOGeSHc9MGk3KZJ72hkUy1xSyME3lnDx+7g14+Nib+/eKu8jMFdK+XVXcr01zLizWFbrvL+YdhPMWb8bMX+2YRc7DMT1+Xe688S6a69XrLmrQHspladeXW8es/OoF5stn1syedyYrdmaSbz2ywq57+V0HZK+pQvqmxcbNd9j2efltsXvaz9nst9z34kTkCokq2odpjk40K5Ggb5iWra9oWqrwhgvh/C7RIBkIx7vQ1xO5RBKcHyMb9tA3vg+YD0QyOToJciuIZbK0PG0cWV6B+SKQoCUTZO9RRDs9eyckOgdFY5iYaYkmj0qKxsSOJxq+/FM0JnYoGpMknmh8dDJjhaIxSdISjW+dzBihaEySeKLh308UjYkd/kVjkqQlGl8GmDHiicbf0ZixQtGYJPFE46OTGSst0fgywIwRisYkCUVjkoSiMUlC0ZgkoWhMkkC0SV6Lhp83CImNSOaJFtIqmxsIyurA0HrN/0B53KGxLgaX0wV9ul9K465WpgEldrK3lLzpUrr/kPm61E5AOR3K4QD6b9xx446CrJ8VFa4Mrtg1a7zSurp8Dm2U1gGU27mSOgX2nSztuvpx2AdPtEOyQRiMAy3TX0AwtGOLhps0RLgxRJNz1HJCNhEH1+rDMaKJZG3R7HgthN5Prw/313Wcui8ULRsoGgSr2JsfEp8/WAnReOMAAAAASUVORK5CYII=" InformativeScreenshot="0aef4cb10c7e8e3cd70a9cc900efd316.png" ScopeSelectorArgument="&lt;html htmlwindowname='Chameleon' title='Chameleon' /&gt;" SearchSteps="FuzzySelector">
                         <uix:TargetAnchorable.Anchors>
@@ -154,12 +154,24 @@
                       </uix:TargetAnchorable>
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'כניסה'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="40" Version="V1">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="http://wolfbrw/Chameleon/Account/LogOn" DesignTimeRectangle="903, 562, 95, 22" ElementType="Button" FriendlyName="'כניסה'" FullSelectorArgument="&lt;webctrl tableCol='1' tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='כניסה' tag='INPUT' check:text='כניסה' /&gt;" Guid="e9677587-79d0-432e-bd7f-0c7565d4bbd4" ImageBase64="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" InformativeScreenshot="3cbcdf82e647aa4ca74e37f852344f8e.png" ScopeSelectorArgument="&lt;html htmlwindowname='Chameleon' title='Chameleon' /&gt;" SearchSteps="FuzzySelector" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;click on login &quot;]" />
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.3" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="436,213" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,326" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'כניסה'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="98fb42b4-d8b0-418f-803c-fadf59eb9e32" Timeout="40" Version="V1">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="http://wolfbrw/Chameleon/Account/LogOn" DesignTimeRectangle="903, 562, 95, 22" ElementType="Button" FriendlyName="'כניסה'" FullSelectorArgument="&lt;webctrl tableCol='1' tableRow='10' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='submit' aaname='כניסה' tag='INPUT' check:text='כניסה' /&gt;" Guid="e9677587-79d0-432e-bd7f-0c7565d4bbd4" ImageBase64="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" InformativeScreenshot="3cbcdf82e647aa4ca74e37f852344f8e.png" ScopeSelectorArgument="&lt;html htmlwindowname='Chameleon' title='Chameleon' /&gt;" SearchSteps="FuzzySelector" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;click on login &quot;]" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
@@ -181,7 +193,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: ריכוז הודעות -- Webpage Dialog" sap:VirtualizedContainerService.HintSize="680,539" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Application: ריכוז הודעות -- Webpage Dialog" sap:VirtualizedContainerService.HintSize="782,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="321e2597-f19f-4cfa-9f8d-e87b12e1fcf5" Timeout="[in_dbl_timeoutInSec]" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -206,12 +218,12 @@
               </uix:NApplicationCard.TargetApp>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="782,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
@@ -233,7 +245,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:CommentOut sap2010:Annotation.AnnotationText="Lior - I disabled this for now. the login will be completed before." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="680,108" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut sap2010:Annotation.AnnotationText="Lior - I disabled this for now. the login will be completed before." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="782,108" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="722,453" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
